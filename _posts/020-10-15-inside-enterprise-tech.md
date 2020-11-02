@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Inside Enterprise Technology"
+title: "Disney Enterprise Technology"
 summary: "Information-focused website for the Enterprise Technology group at Disney."
-date: 2020-10-14
+date: 2020-10-13
 tag: ux design
 client: Disney
+bg: alternate
 thumbnail: insideenterprisetech.jpg
 alt: "Inside Enterprise Technology Website"
 ---

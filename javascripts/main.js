@@ -5,12 +5,12 @@
     var menu = button.nextElementSibling;
     // set initial (closed menu) states
     button.setAttribute('aria-expanded', 'false');
-    menu.hidden = true;
+    menu.classList.add('hidden');
     button.addEventListener('click', function () {
         // toggle menu visibility
         var expanded = this.getAttribute('aria-expanded') === 'true';
         this.setAttribute('aria-expanded', String(!expanded));
-        menu.hidden = expanded;
+        menu.classList.toggle('hidden');
     });
 
 })()

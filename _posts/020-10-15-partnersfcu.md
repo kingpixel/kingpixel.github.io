@@ -2,10 +2,10 @@
 layout: post
 title: "Partners Federal Credit Union"
 summary: "A lively marketing website for Partners Credit Union delivers a responsive, inclusive, and on-brand experience."
-date: 2020-10-13
+date: 2020-10-14
 tag: ux design
 client: Partners Federal Credit Union
-bg: alternate
+bg: white
 thumbnail: partnersaulani.jpg
 alt: "Partners FCU Marketing Webiste"
 ---

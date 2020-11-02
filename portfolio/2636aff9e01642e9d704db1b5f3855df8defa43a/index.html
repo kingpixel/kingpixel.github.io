@@ -2,36 +2,40 @@
 layout: default
 title: Portfolio
 ---
-<div class="row primary">
+<div class="bg-primary">
     <div class="sub-heading">
-        <div class="copy">
-            <h2>Portfolio</h2>
+        <div class="text-center p-12">
+            <h2 class="my-0">Portfolio</h2>
         </div>
     </div>
 </div>
+
 {% for post in site.posts %}
-  <div class="row {{post.bg}}">
-    <div class="img-center">
-        <div class="image resize">
-            <img alt="{{post.alt}}" src="/images/work/{{post.thumbnail}}">
+{% if post.tag == "ux design" %}
+
+<div class="bg-{{post.bg}}">
+    <div class="flex flex-col items-stretch px-6 py-0 text-center md:flex-col md:items-center md:max-w-3xl md:mx-auto md:my-0 md:p-0">
+        <div class="max-w-full flex flex-col items-center my-8 md:pt-0 md:mt-24">            
+            <img class="max-w-full {{post.shadow}}" alt="{{post.alt}}" src="/images/work/{{post.thumbnail}}">
         </div> 
-        <div class="copy">
-            <small>{{post.tags}}</small>
-            <h3>{{post.title}}</em></h3>
+        <div class="max-w-2xl mb-8 md:m-0 md:px-0 md:mb-24 md:max-w-lg">
+            <small class="uppercase">{{post.tags}}</small>
+            <h3 class="mt-2">{{post.title}}</em></h3>
             <p> {{post.summary}}</p>
         </div>
     </div>
-</div>  
+</div>
+{% endif %}
 {% endfor %}
 
-<div class="row inverse">
-    <div class="img-center">
-        <div class="image">
+<div class="bg-black text-white">
+    <div class="flex flex-col items-stretch px-6 py-0 text-center md:flex-col md:items-center md:max-w-2xl md:mx-auto md:my-0 md:p-0">
+        <div class="max-w-full flex flex-col items-center my-8 md:max-w-sm md:pt-0 md:mt-24">
             {% include avatar.html %}
-        </div>
-        <div class="copy">
-            <h2>Let's Connect.</h2>
-            <p>Are you looking for a digital designer with more than a decade of enterprise experience and technical know-how? Send me an email, or connect with me on Linkedin.</p>
+        </div> 
+        <div class="max-w-2xl mb-8 md:m-0 md:px-0 md:mb-24 md:max-w-lg">
+            <h2 class="mt-6">Let's Connect.</h2>
+            <p>Are you looking for a digital designer with enterprise experience and technical know-how? Send me an email, or connect with me on Linkedin.</p>
             {% include contact.html %}
         </div>
     </div>
