@@ -3,7 +3,7 @@ layout: default
 title: Be Better Challenges
 ---
 
-<div class="bg-primary">
+<div class="bg-bebetter">
     <div class="flex flex-col items-stretch px-6 py-0 md:flex-row md:items-center md:max-w-3xl md:mx-auto md:my-0 md:p-0">        
         <div class="max-w-full mb-0 md:max-w-sm">
             <img class="max-w-full mx-auto my-6 mb-0 md:block md:my-24 md:mx-0 md:max-w-none" alt="Be Better Bee" src="/images/bee.png" width="162" height="191">
